@@ -10,7 +10,7 @@ import AboutData from './data/AboutData.js'
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
       <Header />
       <BrowserRouter>
         <Switch>

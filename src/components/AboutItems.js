@@ -1,7 +1,7 @@
 
 const AboutItems = ({ aboutData }) => {
     return (
-        <div className="aboutItems">
+        <div className="AboutItems">
             <h3>{aboutData.title}</h3>
             <i class={aboutData.icon}></i> 
         </div>
