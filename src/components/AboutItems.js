@@ -1,9 +1,9 @@
 
 const AboutItems = ({ aboutData }) => {
     return (
-        <div>
-            
-            <p>{aboutData.title}</p>
+        <div className="aboutItems">
+            <h3>{aboutData.title}</h3>
+            <i class={aboutData.icon}></i> 
         </div>
     )
 }

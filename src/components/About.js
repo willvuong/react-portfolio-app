@@ -5,7 +5,7 @@ const About = ({ aboutData }) => {
     return (
         <div className="about">
             <p>Hello, my name is William and I am a Computer Programming graduate from Seneca College.</p>
-            <h3>What I Offer</h3>
+            <h2>What I Offer</h2>
             {aboutData.length > 0 && aboutData.map((data) => (
                 //console.log(data.title);
                 <AboutItems 
