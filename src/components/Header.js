@@ -1,5 +1,3 @@
-import { Route } from 'react-router-dom'
-
 import Navigation from './Navigation.js'
 
 const Header = () => {
