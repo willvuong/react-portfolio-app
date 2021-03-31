@@ -25,6 +25,11 @@ const Footer = () => {
                             <i class="fas fa-phone-square-alt fa-3x"></i>
                         </a>
                     </li>
+                    <li>
+                        <a href="tel:6477085527">
+                            <i class="fas fa-phone-square-alt fa-3x"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
