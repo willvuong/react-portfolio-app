@@ -33,5 +33,7 @@ const projectsData = [
         img: "", //insert image src
         demoLink: "", //insert webside url
         herokuLink: "" //insert heroku link
-    },
+    }
 ]
+
+export default projectsData;

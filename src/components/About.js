@@ -1,5 +1,4 @@
 import AboutItems from './AboutItems.js'
-//import AboutData from '../data/AboutData.js'
 
 const About = ({ aboutData }) => {
     return (

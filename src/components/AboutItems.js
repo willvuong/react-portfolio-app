@@ -3,7 +3,7 @@ const AboutItems = ({ aboutData }) => {
     return (
         <div className="AboutItems">
             <h3>{aboutData.title}</h3>
-            <i class={aboutData.icon}></i> 
+            <i className={aboutData.icon}></i> 
         </div>
     )
 }
