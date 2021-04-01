@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* height: 80vh; */
 }
+
+.Header {
+  background-color:red;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navLinks {
+  background-color:yellow;
+
+  list-style-type: none; /* gets rid of bullet points on an <ul> */
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+
+.Footer {
+  border: 1px solid black;
+  
+}
+
+#contactLinks {
+  list-style-type: none; /* gets rid of bullet points on an <ul> */
+  text-align: right;
+  
+}
+
+#portfolioImg {
+  
+  width: 300px;
+  border: 1px black solid;
+  border-radius: 50%;
+} 

@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="Footer">
             <div className="contact">
-                <ul>
+                <ul id="contactLinks">
                     <li>
                         <a href="mailto:willvuong@hotmail.com">
                             <i className="fas fa-envelope-open-text fa-3x"></i>

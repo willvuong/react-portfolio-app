@@ -13,12 +13,4 @@ const Projects = ({ projectsData }) => {
     )
 }
 
-// {aboutData.length > 0 && aboutData.map((data) => (
-//     //console.log(data.title);
-//     <AboutItems 
-//     key={data.id} 
-//     aboutData={data}
-//     />
-// ))}
-
 export default Projects
