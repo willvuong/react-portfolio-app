@@ -10,6 +10,7 @@ import Footer from './components/Footer.js'
 //data
 import aboutData from './data/AboutData.js'
 import projectsData from './data/ProjectsData.js'
+import contactData from './data/ContactData'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route exact path='/projects'><Projects projectsData={projectsData}/></Route>
         </Switch>
       </BrowserRouter>
-      <Footer />
+      <Footer contactData={contactData}/>
     </div>
   );
 }

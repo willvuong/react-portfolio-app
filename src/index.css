@@ -8,8 +8,18 @@ body {
   /* flex-direction: column; */
   /* align-items: center; */
   /* height: 80vh; */
-}
+  
+  /* height: 2000px;
+  width: 400px;
+  
 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px; */
+}
+/******************************* HEADER *******************************/
 .Header {
   background-color:red;
 
@@ -26,22 +36,42 @@ body {
   padding: 1rem;
   border: 1px solid black;
 }
+/******************************* HEADER *******************************/
 
 
-.Footer {
-  border: 1px solid black;
-  
-}
-
-#contactLinks {
-  list-style-type: none; /* gets rid of bullet points on an <ul> */
-  text-align: right;
-  
-}
-
+/******************************* BODY *******************************/
 #portfolioImg {
   
   width: 300px;
   border: 1px black solid;
   border-radius: 50%;
 } 
+/******************************* BODY *******************************/
+
+
+
+/******************************* FOOTER *******************************/
+.Footer {
+  border: 1px solid black;
+  /* text-align: center; */
+  padding: 1rem;
+}
+
+#contactLinks {
+  list-style-type: none; /* gets rid of bullet points on an <ul> */
+  padding: 0; /* list have padding by default */
+  
+}
+
+#contactLinks li{
+  display: inline-block;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.fab, .fas{
+  color: black;
+}
+/******************************* FOOTER *******************************/
+
