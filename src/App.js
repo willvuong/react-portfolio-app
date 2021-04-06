@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom'
 
 import './App.css';
 import Header from './components/Header.js'
@@ -13,11 +13,12 @@ import projectsData from './data/ProjectsData.js'
 import contactData from './data/ContactData'
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <Header />
       <BrowserRouter>
-        <Switch>
+      <Switch location={location} key={location.key}>
           <Route exact path='/'><Home /></Route>
           <Route exact path='/about'><About aboutData={aboutData}/></Route>
           <Route exact path='/projects'><Projects projectsData={projectsData}/></Route>
