@@ -64,6 +64,29 @@ body {
 #navLinks li a:hover {
   color: blue;
 }
+
+.fa-bars { /* hamburger menu */
+  display: none;
+}
+
+@media only screen and (max-width:1000px) {
+  #navLinks {
+    width: 100%;
+    background: linear-gradient(rgb(235, 235, 235), rgb(212, 212, 212));
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 2;
+  }
+  #navLinks li {
+    display:block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .fa-bars {
+    display:block;
+  }
+}
 /******************************* HEADER *******************************/
 
 
