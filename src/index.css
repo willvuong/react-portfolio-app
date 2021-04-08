@@ -45,32 +45,33 @@ body {
 
 .Navigation {
   flex: 1; /* lets all the flexible items be the same length, regardless of its content */
-  text-align: right;
+  text-align: right; /* navlinks go to right of header */
 }
 
 #navLinks li { /* remember to apply to 'li' specifically to affect the items within the ul #navLinks -> #navLinks li */
   /* background-color:yellow;
   border: 1px solid black; */
   list-style-type: none; /* gets rid of bullet points on an <ul> */
-  display: inline-block;
+  display: inline-block; /* display links horizontally instead of verically */
   padding: 1rem;
 }
 
 #navLinks li a { /* <Link /> in Navigation.js comes out as a tag within the dom (refer to in dev tools on chrome) */
-  text-decoration: none;
+  text-decoration: none; /* removes underlined links */
   color: black;
+  opacity: 0.6;
 }
 
 #navLinks li a:hover {
-  color: blue;
+  opacity: 1;
 }
 
-.fa-bars { /* hamburger menu */
+.MenuButton { 
   display: none;
 }
 
 @media only screen and (max-width:1000px) {
-  #navLinks {
+  /* #navLinks {
     width: 100%;
     background: linear-gradient(rgb(235, 235, 235), rgb(212, 212, 212));
     position: absolute;
@@ -82,9 +83,12 @@ body {
     display:block;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  .fa-bars {
+  } */
+  .MenuButton {
     display:block;
+  }
+  #navLinks li {
+    display:none;
   }
 }
 /******************************* HEADER *******************************/
@@ -106,6 +110,7 @@ body {
   /* border: 1px solid black; */
   text-align: center;
   padding: 1rem;
+  opacity: 0.6;
 }
 
 #contactLinks {
@@ -123,6 +128,13 @@ body {
 
 .fab, .fas{
   color: black;
+  opacity: 0.7;
+}
+
+.fab:hover, .fas:hover {
+  opacity: 1;
+  font-size: 2.2em;
+  transition: 0.1s ease-out;
 }
 /******************************* FOOTER *******************************/
 

@@ -9,7 +9,6 @@ const Header = () => {
                     <img src="mylogo.png" className="myLogo" alt="logo"/>
                 </a>
                 <Navigation />
-                <i class="fas fa-bars fa-2x" onClick="toggleMenu()"></i>
             </div>
         </header>
     )
