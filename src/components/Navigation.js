@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import MenuButton from './MenuButton.js'
+import NavigationResponsive from './NavigationResponsive.js'
 
 const Navigation = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -19,6 +20,7 @@ const Navigation = () => {
             onClick={() => setShowMenu(!showMenu)} //toggle between true and false for onClick result
             />
             
+            {showMenu && <NavigationResponsive />}
         </nav>
         
 
