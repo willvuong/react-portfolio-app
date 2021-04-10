@@ -1,12 +1,23 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+
 
 import MenuButton from './MenuButton.js'
 import NavigationResponsive from './NavigationResponsive.js'
 
 const Navigation = () => {
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false) //for hamburger menu (click hambuger to open, X to close)
     //console.log({ showMenu })
+
+    const [activeTab, setActiveTab] = useState('')
+    const currentLocation = window.location.href;
+    useEffect(() => {
+        if (currentLocation.endsWith('/about')) {
+            setActiveTab('About')
+        } else if (currentLocation.endsWith('/projects')) {
+            setActiveTab('About')
+        }
+    }, [activeTab])
 
     return (
         <nav className="Navigation">
