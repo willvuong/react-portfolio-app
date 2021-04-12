@@ -132,9 +132,11 @@ body {
     width: 200px;
     right: 0;
     top: 10; */
-    
   }
-  
+}
+
+.navActive {
+  color: yellow;
 }
 /******************* hamburger menu *******************/
 
@@ -180,8 +182,10 @@ body {
 
 .fab:hover, .fas:hover {
   opacity: 1;
-  font-size: 2.2em;
-  transition: 0.1s ease-out;
+  transform: scale(1.1); /* expands the elements 1.1 its size */
+  transition: 0.2s ease-in-out; /* smothens the transition a bit; animation duration = 0.2s */
+  
+  /* font-size: 2.2em; this makes all div elements movie in accordance to the one expanding  */
 }
 /******************************* FOOTER *******************************/
 

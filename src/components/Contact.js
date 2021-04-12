@@ -4,7 +4,7 @@ const Contact = ({ contactData }) => {
     return (
         <>
             <li>
-                <a href={contactData.link}>
+                <a href={contactData.link} target="_blank">
                     <i className={contactData.icon}></i>
                 </a>
             </li>
