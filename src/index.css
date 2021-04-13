@@ -5,26 +5,9 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
   width: 70%;
-  /* padding-left: 10%;
-  padding-right: 10%; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* height: 80vh; */
-  
-  /* height: 2000px;
-  width: 400px;
-  
-
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -200px; */
 }
 /******************************* HEADER *******************************/
 .Header {
-  /* background-color:red; */
   width: 100%;
   min-height: 10vh;
   padding-left: 10%;
@@ -49,8 +32,6 @@ body {
 }
 
 #navLinks li { /* remember to apply to 'li' specifically to affect the items within the ul #navLinks -> #navLinks li */
-  /* background-color:yellow;
-  border: 1px solid black; */
   list-style-type: none; /* gets rid of bullet points on an <ul> */
   display: inline-block; /* display links horizontally instead of verically */
   padding: 1rem;
@@ -68,14 +49,14 @@ body {
 
 .navActive {
   border-top: 1.5px black solid;
-  opacity: 2;
+  opacity: 1; 
   transform: scale(1.03);
+
 }
 
 .MenuButton { 
   display: none;
 }
-
 
 
 /******************* hamburger menu *******************/
@@ -179,12 +160,18 @@ body {
   opacity: 0.7;
 }
 
-.fab:hover, .fas:hover {
+.contactIcons .fab:hover, .contactIcons .fas:hover {
   opacity: 1;
   transform: scale(1.1); /* expands the elements 1.1 its size */
   transition: 0.2s ease-in-out; /* smothens the transition a bit; animation duration = 0.2s */
   
   /* font-size: 2.2em; this makes all div elements movie in accordance to the one expanding  */
+}
+
+.MenuButton .fab:hover, .MenuButton .fas:hover {
+  opacity: 1;
+  transform: scale(1.1); /* expands the elements 1.1 its size */
+  transition: 0.2s ease-in-out; /* smothens the transition a bit; animation duration = 0.2s */
 }
 /******************************* FOOTER *******************************/
 
