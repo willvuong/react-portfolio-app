@@ -66,8 +66,10 @@ body {
   opacity: 1;
 }
 
-#navLinks li a:active {
-  background-color: red;
+.navActive {
+  border-top: 1.5px black solid;
+  opacity: 2;
+  transform: scale(1.03);
 }
 
 .MenuButton { 
@@ -135,9 +137,6 @@ body {
   }
 }
 
-.navActive {
-  color: yellow;
-}
 /******************* hamburger menu *******************/
 
 /******************************* HEADER *******************************/

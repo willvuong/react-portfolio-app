@@ -22,10 +22,10 @@ const Navigation = () => {
     return (
         <nav className="Navigation">
             <ul id="navLinks"> {/* <ul id={activeTab ? 'navActive' : 'navLinks'}></ul> */}
-                <li onClick={() => setActiveTab('About')}><Link to='/about'>About</Link></li>
-                <li onClick={() => setActiveTab('Projects')}><Link to='/projects'>Projects</Link></li>
+                <li className={activeTab === 'About' ? "navActive" : ""} onClick={() => setActiveTab('About')}><Link to='/about'>About</Link></li>
+                <li className={activeTab === 'Projects' ? "navActive" : ""} onClick={() => setActiveTab('Projects')}><Link to='/projects'>Projects</Link></li>
             </ul>
-            {activeTab}
+            {/* {activeTab} */}
             <MenuButton 
             icon={showMenu ? <i class="fas fa-times fa-2x"></i> : <i class="fas fa-bars fa-2x"></i>} //X menu of true, hamburger if false
             onClick={() => setShowMenu(!showMenu)} //toggle between true and false for onClick result
