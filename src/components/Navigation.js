@@ -22,8 +22,8 @@ const Navigation = () => {
     return (
         <nav className="Navigation">
             <ul id="navLinks"> {/* <ul id={activeTab ? 'navActive' : 'navLinks'}></ul> */}
-                <li className={activeTab === 'About' ? "navActive" : ""} onClick={() => setActiveTab('About')}><Link to='/about'>About</Link></li>
-                <li className={activeTab === 'Projects' ? "navActive" : ""} onClick={() => setActiveTab('Projects')}><Link to='/projects'>Projects</Link></li>
+                <li className={activeTab === 'About' ? "navActive" : ""}><Link to='/about' onClick={() => setActiveTab('About')}>About</Link></li>
+                <li className={activeTab === 'Projects' ? "navActive" : ""}><Link to='/projects' onClick={() => setActiveTab('Projects')}>Projects</Link></li>
             </ul>
             {/* {activeTab} */}
             <MenuButton 
