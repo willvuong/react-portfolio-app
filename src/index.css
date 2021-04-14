@@ -5,6 +5,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
   width: 70%;
+  background-color: rgb(255, 255, 245);
 }
 /******************************* HEADER *******************************/
 .Header {
@@ -66,14 +67,12 @@ body {
 
 #navLinksResponsive li {
   list-style-type: none;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 
 #navLinksResponsive li a {
   text-decoration: none;
-  color: black;
-  opacity: 0.6;
-  
+  color: black;  
 }
 
 @media only screen and (max-width:1008px) { /* 768px = tablet width */
@@ -99,14 +98,20 @@ body {
   }
 
   .NavigationResponsive {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    background-color: green;
+    display: block;
+    text-align: center;
+    position: fixed; 
     
-    top: 0;
-    width: 10%;
+    background-color: rgba(190, 190, 165, 0.96) ;
+
+    
+    left: 0;
+    width: 100%;
+    transition: height 2s;
+
+    /* transform: translateY(-10px);
+    transition: all 0.4 ease; */
+    
     /* justify-content: center;
     background-color: green;
     position: fixed;
@@ -127,8 +132,9 @@ body {
 #portfolioImg {
   
   width: 250px;
-  /* border: 1px black solid;
-  border-radius: 50%; */
+  /* border: 1px black solid; */
+  border-radius: 50%;
+  
 } 
 /******************************* BODY *******************************/
 
