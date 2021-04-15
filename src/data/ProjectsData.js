@@ -1,38 +1,44 @@
+import hangman from "../websiteScreenShots/hangman.png"
+import todo from "../websiteScreenShots/todo.png"
+import moviedb from "../websiteScreenShots/moviedb.png"
+import studio from "../websiteScreenShots/studio.png"
+import webdatabase from "../websiteScreenShots/webdatabase.png"
+
 const projectsData = [
     {
         id: 1,
         name: "Hangman",
-        img: "", //insert image src
+        img: hangman, //insert image src
         demoLink: "", //insert webside url
-        herokuLink: "" //insert heroku link
+        sourceCode: "https://github.com/willvuong/react-hangman-app" //insert heroku link
     },
     {
         id: 2,
         name: "To-Do App",
-        img: "", //insert image src
+        img: todo, //insert image src
         demoLink: "", //insert webside url
-        herokuLink: "" //insert heroku link
+        sourceCode: "https://github.com/willvuong/react-to-do-app" //insert heroku link
     },
     {
         id: 3,
         name: "MovieDB",
-        img: "", //insert image src
+        img: moviedb, //insert image src
         demoLink: "", //insert webside url
-        herokuLink: "" //insert heroku link
+        sourceCode: "" //insert heroku link
     },
     {
         id: 4,
         name: "Studio 6ix",
-        img: "", //insert image src
+        img: studio, //insert image src
         demoLink: "", //insert webside url
-        herokuLink: "" //insert heroku link
+        sourceCode: "" //insert heroku link
     },
     {
         id: 5,
         name: "Employee DB Web433 App",
-        img: "", //insert image src
+        img: webdatabase, //insert image src
         demoLink: "", //insert webside url
-        herokuLink: "" //insert heroku link
+        sourceCode: "" //insert heroku link
     }
 ]
 

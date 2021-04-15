@@ -4,6 +4,7 @@ const ProjectsItems = ({ projectsData }) => {
         <div className="ProjectItems">
             
             <p>{projectsData.name}</p>
+            <img src={projectsData.img} height="200px" width="400px"></img>
         </div>
     )
 }
