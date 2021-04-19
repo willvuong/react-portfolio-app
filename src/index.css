@@ -5,8 +5,14 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
   width: 70%;
-  background-color: rgb(255, 255, 245);
 }
+
+@media only screen and (max-width:1008px) {
+  body {
+    width: 85%;
+  }
+}
+
 /******************************* HEADER *******************************/
 .Header {
   width: 100%;
@@ -15,6 +21,8 @@ body {
   padding-right: 10%;
   box-sizing: border-box;
   overflow: hidden;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -52,13 +60,11 @@ body {
   border-top: 1.5px black solid;
   opacity: 1; 
   transform: scale(1.03);
-
 }
 
 .MenuButton { 
   display: none;
 }
-
 
 /******************* hamburger menu *******************/
 .NavigationResponsive {
@@ -76,19 +82,6 @@ body {
 }
 
 @media only screen and (max-width:1008px) { /* 768px = tablet width */
-  /* #navLinks {
-    width: 100%;
-    background: linear-gradient(rgb(235, 235, 235), rgb(212, 212, 212));
-    position: absolute;
-    top: 110px;
-    right: 0;
-    z-index: 2;
-  }
-  #navLinks li {
-    display:block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  } */
   .MenuButton {
     display:block;
   }
@@ -101,17 +94,13 @@ body {
     display: block;
     text-align: center;
     position: fixed; 
-    
-    background-color: rgba(190, 190, 165, 0.96) ;
-
-    
+    background-color: rgba(220, 220, 220, 0.96) ;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
     left: 0;
     width: 100%;
-    transition: height 2s;
-
+    transition: max-height 0.2s ease-out;
     /* transform: translateY(-10px);
     transition: all 0.4 ease; */
-    
     /* justify-content: center;
     background-color: green;
     position: fixed;
@@ -128,21 +117,46 @@ body {
 /******************************* HEADER *******************************/
 
 
-/******************************* BODY *******************************/
+/******************************* HOME *******************************/
 #portfolioImg {
-  
   width: 250px;
   /* border: 1px black solid; */
   border-radius: 50%;
-  
 } 
-/******************************* BODY *******************************/
+/******************************* HOME *******************************/
+
+
+
+/******************************* ABOUT *******************************/
+.AboutItems {
+  /* border: 1px solid red; */
+  margin: 1rem;
+}
+
+.AboutItems h3 {
+  display: inline-block;
+}
+
+.AboutItems i {
+  padding-right: 1rem;
+}
+
+#resume {
+  text-align: center;
+}
+/******************************* ABOUT *******************************/
+
+/******************************* PROJECTS *******************************/
+/* code projects css */
+/******************************* PROJECTS *******************************/
+
 
 
 
 /******************************* FOOTER *******************************/
 .Footer {
-  /* border: 1px solid black; */
+  border-top: 1px solid lightgray;
+  margin-top: 1rem;
   text-align: center;
   padding: 1rem;
   opacity: 0.6;
@@ -150,8 +164,7 @@ body {
 
 #contactLinks {
   list-style-type: none; /* gets rid of bullet points on an <ul> */
-  padding: 0; /* list have padding by default */
-  
+  padding: 0; /* list have padding by default */ 
 }
 
 #contactLinks li{
@@ -170,7 +183,6 @@ body {
   opacity: 1;
   transform: scale(1.1); /* expands the elements 1.1 its size */
   transition: 0.2s ease-in-out; /* smothens the transition a bit; animation duration = 0.2s */
-  
   /* font-size: 2.2em; this makes all div elements movie in accordance to the one expanding  */
 }
 

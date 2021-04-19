@@ -2,8 +2,9 @@
 const AboutItems = ({ aboutData }) => {
     return (
         <div className="AboutItems">
-            <h3>{aboutData.title}</h3>
             <i className={aboutData.icon}></i> 
+            <h3>{aboutData.title}</h3>
+            <p>{aboutData.description}</p>
         </div>
     )
 }

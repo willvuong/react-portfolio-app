@@ -21,7 +21,7 @@ const Header = () => {
                 />
             </div>
 
-            {showMenu && <NavigationResponsive />}
+            {showMenu && <NavigationResponsive setShowMenu={setShowMenu}/>}
 
         </header>
     )

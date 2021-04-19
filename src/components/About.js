@@ -11,6 +11,7 @@ const About = ({ aboutData }) => {
                 aboutData={data}
                 />
             ))}
+            <p id="resume">-insert PDF resume link here-</p>
         </div>
     )
 }
