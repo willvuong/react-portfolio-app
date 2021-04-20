@@ -1,10 +1,12 @@
 
 const ProjectsItems = ({ projectsData }) => {
     return (
-        <div className="ProjectItems">
+        <div className="ProjectsItems">
             
-            <p>{projectsData.name}</p>
-            <img src={projectsData.img} height="200px" width="400px"></img>
+            <img src={projectsData.img} ></img>
+            <div className="projectInfo">
+                <p>{projectsData.name}</p>
+            </div>
         </div>
     )
 }

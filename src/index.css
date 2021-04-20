@@ -151,7 +151,25 @@ body {
 /******************************* PROJECTS *******************************/
 
 
+.ProjectsItems {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 50%;
+  display: inline-block;
+  /* border: 1px solid red; */
+}
 
+.ProjectsItems img{
+  border-radius: 15px;
+  height: 400px;
+  width: 100%;
+}
+
+@media only screen and (max-width:1008px) {
+  .ProjectsItems {
+    width: 100%;
+  }
+}
 
 /******************************* FOOTER *******************************/
 .Footer {
