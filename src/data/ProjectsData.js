@@ -35,7 +35,7 @@ const projectsData = [
         description: "",
         img: webdatabase, //insert image src
         demoLink: "", //insert webside url
-        sourceCode: "" //insert heroku link
+        sourceCode: "https://github.com/willvuong/react-422-employee-database-app" //insert heroku link
     },
     {
         id: 5,

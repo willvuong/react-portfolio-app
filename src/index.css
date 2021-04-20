@@ -149,8 +149,6 @@ body {
 /******************************* PROJECTS *******************************/
 /* code projects css */
 /******************************* PROJECTS *******************************/
-
-
 .ProjectsItems {
   box-sizing: border-box;
   padding: 1rem;
@@ -171,6 +169,11 @@ body {
   }
 }
 
+@media only screen and (max-width:500px) {
+  .ProjectsItems img{
+    height: 250px;
+  }
+}
 /******************************* FOOTER *******************************/
 .Footer {
   border-top: 1px solid lightgray;
