@@ -7,7 +7,7 @@ import webdatabase from "../websiteScreenShots/webdatabase.png"
 const projectsData = [
     {
         id: 1,
-        name: "Hangman",
+        name: "Hangman Game",
         description: "",
         img: hangman, //insert image src
         demoLink: "", //insert webside url
@@ -23,7 +23,7 @@ const projectsData = [
     },
     {
         id: 3,
-        name: "MovieDB",
+        name: "Movie Database App",
         description: "",
         img: moviedb, //insert image src
         demoLink: "", //insert webside url
@@ -31,7 +31,7 @@ const projectsData = [
     },
     {
         id: 4,
-        name: "Employee DB Web433 App",
+        name: "Employee Database App",
         description: "",
         img: webdatabase, //insert image src
         demoLink: "", //insert webside url
@@ -39,10 +39,10 @@ const projectsData = [
     },
     {
         id: 5,
-        name: "Studio 6ix",
+        name: "Studio 6ix: Barbershop Website",
         description: "",
         img: studio, //insert image src
-        demoLink: "studio6ix.ca", //insert webside url
+        demoLink: "//www.studio6ix.ca", //insert webside url
         sourceCode: "" //insert heroku link
     }
 ]

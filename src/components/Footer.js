@@ -12,6 +12,7 @@ const Footer = ({ contactData }) => {
                 />
             ))}
             </ul>
+            <p id="copyright">Copyright © 2021 William Vuong</p>
         </div>
     )
 }

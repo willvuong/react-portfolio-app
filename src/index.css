@@ -119,9 +119,10 @@ body {
 
 /******************************* HOME *******************************/
 #portfolioImg {
-  width: 250px;
-  /* border: 1px black solid; */
+  height: 275px;
+  width: 240px;
   border-radius: 50%;
+  box-shadow: 10px 10px rgb(245, 244, 244);
 } 
 /******************************* HOME *******************************/
 
@@ -154,14 +155,52 @@ body {
   padding: 1rem;
   width: 50%;
   display: inline-block;
+  
+  overflow: hidden;
   /* border: 1px solid red; */
 }
 
-.ProjectsItems img{
+.projectImgContainer {
+  background-color: Black;
   border-radius: 15px;
   height: 400px;
-  width: 100%;
+  z-index:10;
+  position: relative;
 }
+
+.projectImgContainer img{
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.projectImgContainer img:hover {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+/* .projectInfo {
+  text-align: center;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+} */
+
+.projectInfo a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .projectInfo:hover {
+  transform: translateY(0%);
+  opacity: 0.5;
+} */
 
 @media only screen and (max-width:1008px) {
   .ProjectsItems {
@@ -170,7 +209,7 @@ body {
 }
 
 @media only screen and (max-width:500px) {
-  .ProjectsItems img{
+  .projectImgContainer {
     height: 250px;
   }
 }
@@ -211,6 +250,11 @@ body {
   opacity: 1;
   transform: scale(1.1); /* expands the elements 1.1 its size */
   transition: 0.2s ease-in-out; /* smothens the transition a bit; animation duration = 0.2s */
+}
+
+#copyright {
+  padding: 0.5rem;
+  font-size: 12px;
 }
 /******************************* FOOTER *******************************/
 

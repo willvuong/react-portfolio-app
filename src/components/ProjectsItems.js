@@ -2,14 +2,17 @@
 const ProjectsItems = ({ projectsData }) => {
     return (
         <div className="ProjectsItems">
-            <img src={projectsData.img} ></img>
-            
+            <div className="projectImgContainer"> {/* specifically for dark background on hover */}
+                <img src={projectsData.img} ></img>
+            </div>
+
+            <h3>{projectsData.name}</h3>
+
             <div className="projectInfo">
-                <h3>{projectsData.name}</h3>
                 <p>{projectsData.description}</p>
-                <a href={projectsData.demoLink}>Demo</a>
-                <br/>
-                <a href={projectsData.sourceCode}>Source</a>
+                <a href={projectsData.demoLink} target="_blank">Demo</a>
+                <br />
+                <a href={projectsData.sourceCode} target="_blank">Source</a>
             </div>
         </div>
     )
