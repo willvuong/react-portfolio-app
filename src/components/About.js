@@ -6,12 +6,14 @@ const About = ({ aboutData }) => {
             <h2>What I Offer</h2>
             {aboutData.length > 0 && aboutData.map((data) => (
                 //console.log(data.title);
-                <AboutItems 
-                key={data.id} 
-                aboutData={data}
+                <AboutItems
+                    key={data.id}
+                    aboutData={data}
                 />
             ))}
-            <p id="resume">-insert PDF resume link here-</p>
+            <div className="resume">
+                <a href="resumeSAMPLE.pdf" download>- <i className="far fa-file"></i> Resume -</a>
+            </div>
         </div>
     )
 }
