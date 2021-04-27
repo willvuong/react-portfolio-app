@@ -3,19 +3,17 @@ const ProjectsItems = ({ projectsData }) => {
     return (
         <div className="ProjectsItems">
 
-            <div className="projectImgContainer"> 
+            <div className="projectImgContainer">
                 <img src={projectsData.img} ></img>
                 <div className="overlay"></div> {/* specifically for dark background on hover */}
 
                 <div className="projectInfo">
                     <p>{projectsData.description}</p>
-                    <button>
-                        <a href={projectsData.demoLink} target="_blank">Demo</a>
-                    </button>
-                    <br />
-                    <button>
-                        <a href={projectsData.sourceCode} target="_blank">Source</a>
-                    </button>
+
+                    <div className="projectLinks">
+                            <a href={projectsData.demoLink} target="_blank">Demo <i class="fas fa-arrow-right"></i></a>
+                            <a href={projectsData.sourceCode} target="_blank">Source <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
 

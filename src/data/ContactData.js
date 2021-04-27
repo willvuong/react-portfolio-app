@@ -17,12 +17,6 @@ const contactData = [
         link: "https://github.com/willvuong",
         icon: "fab fa-github fa-2x"
     },
-    {
-        id: 4,
-        type: "phone",
-        link: "tel:6477085527",
-        icon: "fas fa-phone-square-alt fa-2x"
-    },
 ]
 
 export default contactData;

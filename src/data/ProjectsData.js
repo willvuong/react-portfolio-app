@@ -24,7 +24,7 @@ const projectsData = [
     {
         id: 3,
         name: "Movie Database App",
-        description: "This movie database application pulls data from an API in order to display specfically queried movies from the user. A useState is intialized as null which it then stores the data of the query that the user enters in the search bar. All movies that match the specified keyword is firstly searched through the API -> converted to JSON objects -> results sent to movies component as props -> movie component where the data is then handled and rendered onto the page",
+        description: "This movie database application pulls data from an API in order to display specfically queried movies from the user. A useState is intialized as null which it then used for storing queried data that the user enters in the search bar. All movies that match the specified keyword is firstly searched through the API -> converted to JSON objects -> results sent to movies component as props -> movie component where the data is then handled and rendered onto the page",
         img: moviedb, //insert image src
         demoLink: "", //insert webside url
         sourceCode: "" //insert heroku link
@@ -32,7 +32,7 @@ const projectsData = [
     {
         id: 4,
         name: "Employee Database App",
-        description: "",
+        description: "A database application that fetches data from an API that includes information about an employee database. Multiple components are utilized in order to make up the websites layout.",
         img: webdatabase, //insert image src
         demoLink: "", //insert webside url
         sourceCode: "https://github.com/willvuong/react-422-employee-database-app" //insert heroku link
@@ -40,10 +40,10 @@ const projectsData = [
     {
         id: 5,
         name: "Studio 6ix: Barbershop Website",
-        description: "",
+        description: "A website that displays information about the barbershop's work, services offered, staff members, and contact information for a simple and meaningful way. This website was built on Wordpress and uses plugins that helped display information like a slideshow, Instagram feed, and map.",
         img: studio, //insert image src
         demoLink: "//www.studio6ix.ca", //insert webside url
-        sourceCode: "" //insert heroku link
+        sourceCode: "//www.studio6ix.ca" //insert heroku link
     }
 ]
 
