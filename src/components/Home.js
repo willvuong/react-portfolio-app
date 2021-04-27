@@ -3,6 +3,8 @@ import React from 'react'
 const Home = () => {
     return (
         <div className="Home">
+            <title>William Vuong</title>
+            
             <div className="description">
                 <div className="bio">
                     <h2>HELLO, I'M WILLIAM.</h2>

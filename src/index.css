@@ -13,6 +13,18 @@ body {
   }
 }
 
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(-10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
 /******************************* HEADER *******************************/
 .Header {
   width: 100%;
@@ -59,7 +71,7 @@ body {
 .navActive {
   border-top: 1.5px black solid;
   opacity: 1; 
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
 }
 
 .MenuButton { 
@@ -93,7 +105,7 @@ body {
   .NavigationResponsive {
     display: block;
     text-align: center;
-    
+    animation: fadeInContent 2s;
     /* position: fixed; 
     background-color: rgba(220, 220, 220, 0.96) ;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
@@ -121,6 +133,7 @@ body {
 /******************************* HOME *******************************/
 .Home {
   width: 95%;
+  animation: fadeInContent 1s;
 }
 
 .description {
@@ -146,6 +159,7 @@ body {
 /******************************* ABOUT *******************************/
 .About {
   width: 95%;
+  animation: fadeInContent 1s;
 }
 .AboutItems {
   /* border: 1px solid red; */
@@ -179,6 +193,10 @@ body {
 /******************************* ABOUT *******************************/
 
 /******************************* PROJECTS *******************************/
+.Projects {
+  animation: fadeInContent 1s;
+}
+
 .ProjectsItems {
   box-sizing: border-box;
   padding: 1.5rem;
