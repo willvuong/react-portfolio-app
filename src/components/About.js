@@ -12,7 +12,7 @@ const About = ({ aboutData }) => {
                 />
             ))}
             <div className="resume">
-                <a href="resumeSAMPLE.pdf" download>- <i className="far fa-file"></i> Resume -</a>
+                <a href="resumeSAMPLE.pdf" download><i className="far fa-file"></i> Resume</a>
             </div>
         </div>
     )

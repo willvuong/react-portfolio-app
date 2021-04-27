@@ -9,7 +9,7 @@ body {
 
 @media only screen and (max-width:1008px) {
   body {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -167,7 +167,7 @@ body {
 
 .resume a {
   text-decoration: none;
-  color: blue;
+  color: black;
   opacity: 0.7;
   font-size: 1.2rem;
 }
@@ -188,35 +188,60 @@ body {
 }
 
 .projectImgContainer {
-  background-color: black;
-  border-radius: 15px;
-  height: 400px;
-  /* z-index:10; */
+  height: 500px;
   position: relative;
-}
+}  
 
 .projectImgContainer img{
   border-radius: 15px;
   height: 100%;
   width: 100%;
-  /* z-index: 5; */
-}
-
-.projectImgContainer img:hover {
-  opacity: 0.5;
-  transition: 0.3s ease-in-out;
-}
+} 
 
 .projectInfo {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -25px 0 0 -25px;
-  transition: 0.7s ease-in-out;
+  transform: translate(-50%,-50%);
+  color: white;
   display: none;
 }
 
-.projectImgContainer img:hover + .projectInfo {
+.projectImgContainer:hover > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: 15px;
+    background-color:black;
+    opacity:0.7;
+    /* display: block; */
+    transition: 0.3s ease-in-out;
+}
+
+.projectImgContainer:hover .projectInfo {
+  display: block;
+}
+
+/* .projectImgContainer img:hover {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+} */
+
+/* .projectInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.7s ease-in-out;
+  display: none;
+  z-index: 1;
+  border: red 1px solid;
+  z-index: 1;
+}  */
+
+/* .projectImgContainer img:hover + .projectInfo {
   display: block;
 }
 
@@ -224,18 +249,17 @@ body {
   background-color: rgb(48, 166, 245);
 }
 
-/* .projectInfo:hover > .projectImgContainer img {
+.projectInfo:hover > .projectImgContainer img {
   opacity: 0.2;
   transition: 0.3s ease-in-out;
-} */
+}
 
 .projectInfo {
   text-decoration: none;
-  color: white;
-}
+  color: red;
+} */
 
-
-@media only screen and (max-width:1008px) {
+@media only screen and (max-width:1400px) {
   .ProjectsItems {
     width: 100%;
   }
@@ -243,7 +267,8 @@ body {
 
 @media only screen and (max-width:500px) {
   .projectImgContainer {
-    height: 250px;
+    height: 350px;
+    font-size: 0.75rem;
   }
 }
 /******************************* PROJECTS *******************************/

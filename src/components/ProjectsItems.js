@@ -2,8 +2,10 @@
 const ProjectsItems = ({ projectsData }) => {
     return (
         <div className="ProjectsItems">
-            <div className="projectImgContainer"> {/* specifically for dark background on hover */}
+
+            <div className="projectImgContainer"> 
                 <img src={projectsData.img} ></img>
+                <div className="overlay"></div> {/* specifically for dark background on hover */}
 
                 <div className="projectInfo">
                     <p>{projectsData.description}</p>
