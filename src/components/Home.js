@@ -27,9 +27,10 @@ const Home = () => {
                 <br />
 
                 <p>
-                    I particularly enjoy designing simple but yet meaningful websites.
-                    I have a good understand of the React framework and enjoy developing
-                    with its useful tools as it is easy and very organized.
+                    I especially have an interest in Front-End Web Development and enjoy
+                    designing simple but yet meaningful websites. I have a good understand of 
+                    the React framework and enjoy developing with its useful tools as it is easy 
+                    and very organized.
                 </p>
 
             </div>

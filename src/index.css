@@ -25,6 +25,9 @@ body {
   }
 }
 
+/* 768px = tablet width */
+/* transform: scale(1.03); enlarge element*/
+
 /******************************* HEADER *******************************/
 .Header {
   width: 100%;
@@ -35,6 +38,7 @@ body {
   overflow: hidden;
   border-bottom: 1px solid lightgray;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .navbar {
@@ -61,39 +65,57 @@ body {
 #navLinks li a { /* <Link /> in Navigation.js comes out as a tag within the dom (refer to in dev tools on chrome) */
   text-decoration: none; /* removes underlined links */
   color: black;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 #navLinks li a:hover {
-  opacity: 1;
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
 }
 
 .navActive {
   border-top: 1.5px black solid;
-  opacity: 1; 
-  /* transform: scale(1.03); */
-}
-
-.MenuButton { 
-  display: none;
 }
 
 /******************* hamburger menu *******************/
+.MenuButton { 
+  display: none;
+}
 .NavigationResponsive {
   display: none;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  animation: fadeInContent 0.5s;
+  position: absolute;
+  background: white;
+  z-index: 1;
+}
+
+#navLinksResponsive {
+  top: 20%;
+  position: relative;
 }
 
 #navLinksResponsive li {
   list-style-type: none;
   padding: 1rem;
+  font-size: 4rem;
 }
 
 #navLinksResponsive li a {
   text-decoration: none;
-  color: black;  
+  color: black;
+  opacity: 0.6;  
 }
 
-@media only screen and (max-width:1008px) { /* 768px = tablet width */
+#navLinksResponsive li a:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;  
+}
+
+@media only screen and (max-width:1008px) { 
   .MenuButton {
     display:block;
   }
@@ -104,24 +126,6 @@ body {
 
   .NavigationResponsive {
     display: block;
-    text-align: center;
-    animation: fadeInContent 2s;
-    /* position: fixed; 
-    background-color: rgba(220, 220, 220, 0.96) ;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
-    left: 0;
-    width: 100%;
-    transition: max-height 0.2s ease-out; */
-    /* transform: translateY(-10px);
-    transition: all 0.4 ease; */
-    /* justify-content: center;
-    background-color: green;
-    position: fixed;
-    box-sizing: border-box;
-    height: 100%;
-    width: 200px;
-    right: 0;
-    top: 10; */
   }
 }
 
@@ -134,6 +138,7 @@ body {
 .Home {
   width: 95%;
   animation: fadeInContent 1s;
+  font-size: 1.4rem;
 }
 
 .description {
@@ -160,6 +165,7 @@ body {
 .About {
   width: 95%;
   animation: fadeInContent 1s;
+  font-size: 1.4rem;
 }
 .AboutItems {
   /* border: 1px solid red; */
@@ -176,14 +182,14 @@ body {
 
 .resume {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .resume a {
   text-decoration: none;
   color: black;
   opacity: 0.7;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 .resume a:hover {
@@ -203,6 +209,10 @@ body {
   width: 50%;
   display: inline-block;
   overflow: hidden;
+}
+
+.ProjectsItems h3 {
+  font-size: 1.4rem;
 }
 
 .projectImgContainer {
@@ -252,7 +262,7 @@ body {
 
 .projectLinks a:hover {
   opacity: 0.6;
-  transition: 0.3s ease-in-out ;
+  transition: 0.3s ease-in-out;
 }
 
 .projectImgContainer:hover > .overlay {
@@ -319,6 +329,7 @@ body {
   text-align: center;
   padding: 1rem;
   opacity: 0.6;
+  font-size: 1.2rem;
 }
 
 #contactLinks {
