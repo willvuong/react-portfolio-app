@@ -1,7 +1,7 @@
 
-const ProjectsItems = ({ projectsData }) => {
+const ProjectsItem = ({ projectsData }) => {
     return (
-        <div className="ProjectsItems">
+        <div className="ProjectsItem">
 
             <div className="projectImgContainer">
                 <img src={projectsData.img} ></img>
@@ -23,4 +23,4 @@ const ProjectsItems = ({ projectsData }) => {
     )
 }
 
-export default ProjectsItems
+export default ProjectsItem

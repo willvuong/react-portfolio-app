@@ -1,7 +1,7 @@
 
-const AboutItems = ({ aboutData }) => {
+const AboutItem = ({ aboutData }) => {
     return (
-        <div className="AboutItems">
+        <div className="AboutItem">
             <i className={aboutData.icon}></i> 
             <h3>{aboutData.title}</h3>
             <p>{aboutData.description}</p>
@@ -9,4 +9,4 @@ const AboutItems = ({ aboutData }) => {
     )
 }
 
-export default AboutItems
+export default AboutItem

@@ -13,15 +13,39 @@ body {
   }
 }
 
-@keyframes fadeInContent {
+@keyframes translateYContent {
   from {
     opacity: 0;
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
+  }
+}
+
+@keyframes translateXContent {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleInContent {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -81,13 +105,14 @@ body {
 .MenuButton { 
   display: none;
 }
+
 .NavigationResponsive {
   display: none;
   height: 100vh;
   width: 100%;
   left: 0;
   text-align: center;
-  animation: fadeInContent 0.5s;
+  animation: translateYContent 0.5s;
   position: absolute;
   background: white;
   z-index: 1;
@@ -137,7 +162,7 @@ body {
 /******************************* HOME *******************************/
 .Home {
   width: 95%;
-  animation: fadeInContent 1s;
+  animation: translateYContent 1s;
   font-size: 1.4rem;
 }
 
@@ -150,10 +175,12 @@ body {
   width: 240px;
   border-radius: 50%;
   box-shadow: 10px 10px rgb(245, 244, 244);
+  animation: scaleInContent 1s;
 } 
 
 .aboutMe {
   margin-top: 5rem;
+  animation: translateYContent 2s;
 }
 
 
@@ -164,25 +191,40 @@ body {
 /******************************* ABOUT *******************************/
 .About {
   width: 95%;
-  animation: fadeInContent 1s;
   font-size: 1.4rem;
 }
-.AboutItems {
-  /* border: 1px solid red; */
-  margin: 1rem;
+
+.About h2 {
+  font-size: 2rem;
+  animation: translateXContent 1s;
 }
 
-.AboutItems h3 {
+.AboutItem {
+  margin: 1rem;
+  animation: translateYContent 0.5s linear;
+  animation-fill-mode: backwards;
+}
+
+.AboutItem h3 {
   display: inline-block;
 }
 
-.AboutItems i {
+.AboutItem i {
   padding-right: 1rem;
 }
+
+.AboutItem:nth-child(3) { animation-delay: .3s }
+.AboutItem:nth-child(4) { animation-delay: .6s }
+.AboutItem:nth-child(5) { animation-delay: .9s }
+.AboutItem:nth-child(6) { animation-delay: 1.2s }
+.AboutItem:nth-child(7) { animation-delay: 1.5s } 
 
 .resume {
   text-align: center;
   padding: 2rem;
+  animation: scaleInContent 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: backwards;
 }
 
 .resume a {
@@ -199,11 +241,15 @@ body {
 /******************************* ABOUT *******************************/
 
 /******************************* PROJECTS *******************************/
-.Projects {
-  animation: fadeInContent 1s;
+.Projects h2{
+  font-size: 2rem;
+  padding-left: 2.5%;
+  animation: translateXContent 1s;
 }
 
-.ProjectsItems {
+.ProjectsItem {
+  animation: translateYContent 0.5s linear;
+  animation-fill-mode: backwards;
   box-sizing: border-box;
   padding: 1.5rem;
   width: 50%;
@@ -211,9 +257,15 @@ body {
   overflow: hidden;
 }
 
-.ProjectsItems h3 {
+.ProjectsItem h3 {
   font-size: 1.4rem;
 }
+
+.ProjectsItem:nth-child(3) { animation-delay: .3s }
+.ProjectsItem:nth-child(4) { animation-delay: .6s }
+.ProjectsItem:nth-child(5) { animation-delay: .9s }
+.ProjectsItem:nth-child(6) { animation-delay: 1.2s }
+.ProjectsItem:nth-child(7) { animation-delay: 1.5s } 
 
 .projectImgContainer {
   height: 500px;
@@ -238,14 +290,6 @@ body {
 .projectInfo a {
   text-decoration: none;
 }
-
-/* button */
-/* .projectButtons button {
-  background-color: rgb(117, 200, 255);
-  border-radius: 12px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-} */
 
 .projectLinks {
   text-align: center;
@@ -274,13 +318,32 @@ body {
     border-radius: 15px;
     background-color:black;
     opacity:0.7;
-    /* display: block; */
     transition: 0.5s ease-out;
 }
 
 .projectImgContainer:hover .projectInfo {
   display: block;
 }
+
+@media only screen and (max-width:1400px) {
+  .ProjectsItem {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .projectImgContainer {
+    height: 350px;
+    font-size: 0.75rem;
+  }
+  
+/* button */
+/* .projectButtons button {
+  background-color: rgb(117, 200, 255);
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+} */
 
 /* .projectImgContainer img:hover {
   opacity: 0.5;
@@ -308,17 +371,7 @@ body {
   transition: 0.3s ease-in-out;
 } */
 
-@media only screen and (max-width:1400px) {
-  .ProjectsItems {
-    width: 100%;
-  }
-}
 
-@media only screen and (max-width:500px) {
-  .projectImgContainer {
-    height: 350px;
-    font-size: 0.75rem;
-  }
 }
 /******************************* PROJECTS *******************************/
 

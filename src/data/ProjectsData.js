@@ -27,7 +27,7 @@ const projectsData = [
         description: "This movie database application pulls data from an API in order to display specfically queried movies from the user. A useState is intialized as null which it then used for storing queried data that the user enters in the search bar. All movies that match the specified keyword is firstly searched through the API -> converted to JSON objects -> results sent to movies component as props -> movie component where the data is then handled and rendered onto the page",
         img: moviedb, //insert image src
         demoLink: "", //insert webside url
-        sourceCode: "" //insert heroku link
+        sourceCode: "https://github.com/willvuong/react-movie-app" //insert heroku link
     },
     {
         id: 4,

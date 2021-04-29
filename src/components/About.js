@@ -1,4 +1,4 @@
-import AboutItems from './AboutItems.js'
+import AboutItem from './AboutItem.js'
 
 const About = ({ aboutData }) => {
     return (
@@ -7,8 +7,7 @@ const About = ({ aboutData }) => {
             
             <h2>What I Offer</h2>
             {aboutData.length > 0 && aboutData.map((data) => (
-                //console.log(data.title);
-                <AboutItems
+                <AboutItem
                     key={data.id}
                     aboutData={data}
                 />
