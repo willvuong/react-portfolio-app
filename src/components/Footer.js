@@ -3,7 +3,7 @@ import Contact from './Contact.js'
 const Footer = ({ contactData }) => {
     return (
         <div className="Footer">
-            <h4>Contact Me</h4>
+            {/* <h4>Contact Me</h4> */}
             <ul id="contactLinks">
             {contactData.length > 0 && contactData.map((data) => (
                 <Contact
