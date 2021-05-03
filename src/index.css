@@ -60,7 +60,7 @@ body {
   padding-right: 10%;
   box-sizing: border-box;
   overflow: hidden;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
@@ -162,27 +162,86 @@ body {
 /******************************* HOME *******************************/
 .Home {
   width: 95%;
-  animation: translateYContent 1s;
   font-size: 1.4rem;
 }
 
-.description {
+.bioContainer {
+  animation: translateYContent 1s;
+  margin: 1rem;
   display: flex;
+  background: #fbb03b;
+  border-radius: 15px;
+  padding: 1rem;
 }
 
-#portfolioImg {
-  height: 275px;
-  width: 240px;
-  border-radius: 50%;
-  box-shadow: 10px 10px rgb(245, 244, 244);
-  animation: scaleInContent 1s;
-} 
+.bio {
+  width: 50%;
+}
+
+#webDevImg {
+  width: 50%;
+  height: 475px;
+}
+
+.aboutMeContainer {
+  animation: translateYContent 1s;
+  animation-delay: .3s;
+  animation-fill-mode: backwards;
+  display: flex;
+  margin: 1rem;
+  background: #4a90e2;
+  border-radius: 15px;
+  padding: 1rem;
+}
 
 .aboutMe {
   margin-top: 5rem;
   animation: translateYContent 2s;
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#portfolioImg {
+  height: 275px;
+  width: 25%;
+  border-radius: 50%;
+  margin: 1rem;
+} 
+
+@media only screen and (max-width:1200px) { 
+  .aboutMeContainer {
+    display: block;
+    text-align: center;
+  } 
+
+  .aboutMe {
+    margin: 0;
+  }
+
+  #portfolioImg {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .bioContainer {
+    display: block;
+    text-align: center;
+  }
+
+  #webDevImg {
+    width: 100%;
+    margin-top: 1rem;
+  }  
+  
+  #portfolioImg {
+    width: 50%;
+  }
+
+}
 
 /******************************* HOME *******************************/
 
@@ -203,6 +262,11 @@ body {
   margin: 1rem;
   animation: translateYContent 0.5s linear;
   animation-fill-mode: backwards;
+}
+
+.AboutItem:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
 }
 
 .AboutItem h3 {
