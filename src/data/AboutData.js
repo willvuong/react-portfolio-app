@@ -9,7 +9,7 @@ const aboutData = [
         id: 2,
         title: "React Framework",
         icon: "fab fa-react fa-2x",
-        description: "Experience with React with the ability to meaningfully utilized hooks such as useStates, useEffects, and useCallback, in order to complete a specific task while also creating meaningful components that offers clean code design that is easy to work with."
+        description: "Experience with React with the ability to meaningfully utilized hooks such as useStates, useEffects, and useCallback, in order to complete a specific task while also incorporating necessary components that creates clean code design that is easy to work with."
     },
     {
         id: 3,
