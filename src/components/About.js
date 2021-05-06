@@ -3,7 +3,7 @@ import AboutItem from './AboutItem.js'
 const About = ({ aboutData }) => {
     return (
         <div className="About">
-            <title>William Vuong | About</title>
+            <title>About | William Vuong</title>
             
             <h2>What I Offer</h2>
             {aboutData.length > 0 && aboutData.map((data) => (
@@ -13,7 +13,7 @@ const About = ({ aboutData }) => {
                 />
             ))}
             <div className="resume">
-                <a href="resumeSAMPLE.pdf" download><i className="far fa-file"></i> Resume</a>
+                <a href="WilliamVuong_Resume.pdf" download><i className="far fa-file"></i> Resume</a>
             </div>
         </div>
     )

@@ -16,7 +16,7 @@ const projectsData = [
     {
         id: 2,
         name: "To-Do App",
-        description: "A to-do list using React in order to add, delete and track task. Created functions that served as functionality in order to edit the task list that were passed into components as props. React useStates were incorporated in order to display/close the + button (add new task) and to add new tasks components into the task array.",
+        description: "A to-do list using React in order to add, delete and track task. Created functions that were passed into components as props that served the purpose of editing the task list. React useStates were incorporated in order to display/close the + button (add new task) and to add new task components into the task useState array.",
         img: todo, 
         demoLink: "https://fast-bayou-13462.herokuapp.com/",
         sourceCode: "https://github.com/willvuong/react-to-do-app"

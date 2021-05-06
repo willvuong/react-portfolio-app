@@ -3,7 +3,7 @@ import ProjectsItem from './ProjectsItem.js'
 const Projects = ({ projectsData }) => {
     return (
         <div className="Projects">
-            <title>William Vuong | Projects</title>
+            <title>Projects | William Vuong</title>
             <h2>My Work</h2>
             {projectsData.length > 0 && projectsData.map((data) => (
                 <ProjectsItem
