@@ -1,5 +1,6 @@
 {
   "name": "react-portfolio-app",
+  "homepage": "http://williamvuong.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

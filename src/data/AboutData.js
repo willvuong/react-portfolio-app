@@ -19,7 +19,7 @@ const aboutData = [
     },
     {
         id: 4,
-        title: "Documentation and Version Control",
+        title: "Git Documentation and Version Control",
         icon: "fab fa-github fa-2x",
         description: "Strong documentation skills to ensure ease of use for other programmers. Knowledge of Git version control to handle roll backs."
     },

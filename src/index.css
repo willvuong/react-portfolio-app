@@ -9,7 +9,7 @@ body {
 
 @media only screen and (max-width:1008px) {
   body {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -238,9 +238,20 @@ body {
   }  
   
   #portfolioImg {
-    width: 50%;
+    width: 40%;
   }
 
+}
+@media only screen and (max-width:750px) {
+  #portfolioImg {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #portfolioImg {
+    width: 60%;
+  }
 }
 
 /******************************* HOME *******************************/
@@ -260,6 +271,7 @@ body {
 
 .AboutItem {
   margin: 1rem;
+  padding-bottom: 2rem;
   animation: translateYContent 0.5s linear;
   animation-fill-mode: backwards;
 }

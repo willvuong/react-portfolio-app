@@ -12,7 +12,7 @@ const Header = () => {
         <header className='Header'>
             <div className="navbar">
                 <a href="/">
-                    <img src="mylogo.png" className="myLogo" alt="logo" />
+                    <img src="myLogo.png" className="myLogo" alt="logo" />
                 </a>
                 <Navigation />
                 <MenuButton
