@@ -189,7 +189,7 @@ body {
   animation-fill-mode: backwards;
   display: flex;
   margin: 1rem;
-  background: #4a90e2;
+  /* background: #4a90e2; */
   border-radius: 15px;
   padding: 1rem;
 }
@@ -287,6 +287,7 @@ body {
 
 .AboutItem i {
   padding-right: 1rem;
+  color: black;
 }
 
 .AboutItem:nth-child(3) { animation-delay: .3s }
@@ -456,9 +457,15 @@ body {
   border-top: 1px solid lightgray;
   margin-top: 1rem;
   text-align: center;
-  padding: 1rem;
-  opacity: 0.6;
-  font-size: 1.2rem;
+  /* padding: 1rem; */
+  padding-top: 1rem;
+  /* opacity: 0.6; */
+  /* font-size: 1.2rem; */
+  position: absolute;
+  left: 0;
+  color: white;
+  width: 100%;
+  background-color: black;
 }
 
 #contactLinks {
@@ -473,10 +480,9 @@ body {
   border-radius: 50%; */
 }
 
-.fab, .fas{
-  color: black;
-  opacity: 0.7;
-}
+.Footer i {
+  color: white;
+} 
 
 .contactIcons .fab:hover, .contactIcons .fas:hover {
   opacity: 1;
