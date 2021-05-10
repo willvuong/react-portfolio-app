@@ -476,12 +476,11 @@ body {
 #contactLinks li{
   display: inline-block;
   padding: 7px;
-  /* border: 1px solid black;
-  border-radius: 50%; */
 }
 
-.Footer i {
+.Footer i, .Footer p {
   color: white;
+  opacity: 0.6;
 } 
 
 .contactIcons .fab:hover, .contactIcons .fas:hover {
