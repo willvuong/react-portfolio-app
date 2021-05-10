@@ -207,8 +207,9 @@ body {
 #portfolioImg {
   height: 275px;
   width: 25%;
-  border-radius: 50%;
+  border-radius: 30%;
   margin: 1rem;
+  box-shadow: 0 0 20px #ddd;
 } 
 
 @media only screen and (max-width:1200px) { 
