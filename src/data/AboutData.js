@@ -3,13 +3,13 @@ const aboutData = [
         id: 1,
         title: "Web Development Tools",
         icon: "fas fa-code fa-2x",
-        description: "Experience in front-end web development tools such as HTML, CSS, and JavaScript, to create appealing and meaningful web pages."
+        description: "Experienced with front-end web development tools such as HTML, CSS, and JavaScript, to create appealing and meaningful web pages."
     },
     {
         id: 2,
         title: "React Framework",
         icon: "fab fa-react fa-2x",
-        description: "Experience with React with the ability to meaningfully utilized hooks such as useStates, useEffects, and useCallback, in order to complete a specific task while also incorporating necessary components that creates clean code design that is easy to work with."
+        description: "Experienced with React with the ability to meaningfully utilized functional component hooks such as useStates, useEffects, useContext, useReducer, and useCallbackwhile, and use React features such as BrowswerRouter. Also able to incorporate necessary components that creates clean code design that is easy to work with."
     },
     {
         id: 3,
